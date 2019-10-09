@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang ="en">
+<head>
+<meta charset = "utf-8">
+	<title>JavaScript Building Blocks Lab 3</title>
+<link href = "style2.css" rel = "stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+</header>
+<div class="container">
+<div class="row">
+<h1>Halloween Techno Bash</h1>
+<p id="technoBash">
+<script>
+
+
+
+
+var x=setInterval(function() {
+var halloween = new Date ("Oct 31,2019 00:00:00").getTime();
+
+var now = new Date().getTime();
+var difference = halloween - now;
+
+var days = Math.floor(difference /(1000 * 60 * 60 * 24));
+var hours = Math.floor(difference % (1000 * 60 * 60 * 24)/ (1000 * 60 * 60));
+var minutes = Math.floor(difference % (1000 * 60 * 60)/ (1000 * 60));
+var seconds = Math.floor(difference % (1000 * 60) / 1000);
+
+
+document.getElementById("technoBash").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+if (difference < 0) {
+    clearInterval(x);
+    document.getElementById("technoBash").innerHTML = "The Techno Bash Is Here";
+  }
+}, 1000);
+
+ 
+
+</script>
+</p>
+
+</div>
+<div class="row">
+
+<p id="playlist">
+PlAYLIST:
+
+1.Artonoise: last kiss
+2.Restricted collective: teneki 4:13 am
+3.ALSXKNK: Last Light
+4.VVinter rainbovv: departure
+5.Skeler: waste
+6.Error: alone
+
+
+</p>
+</div>
+</div>
+</body>
+</html>
