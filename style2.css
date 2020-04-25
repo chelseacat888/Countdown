@@ -1,0 +1,45 @@
+body {
+background-image: url("x3.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+h1 {
+ font-family: 'Source Code Pro', monospace;
+color: #95B9D6;
+font-size: 50px;
+}
+
+p {
+	font-family: 'Source Code Pro', monospace;
+	color: #95B9D6;
+	font-size: 40px;
+}
+
+#playlist {
+	font-family: 'Source Code Pro', monospace;
+	color: #95B9D6;
+	font-size: 20px;
+	float: left;
+	margin-top: 220px;
+	margin-left: 600px;
+	
+	
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 390px 40px;
+	
+}
+
+#button {
+	background-color: #95B8D6;
+	color: #0E0A06;
+	font-family:  'Source Code Pro', monospace;
+	font-size: 15px;
+	font-weight: bold;
+}
